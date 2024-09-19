@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class ContainerWidget extends StatefulWidget {
   const ContainerWidget({super.key});
 
@@ -12,42 +13,45 @@ class _ContainerWidgetState extends State<ContainerWidget> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        title:Text (
-          'container widget'
-        ),
+        title: Text('container widget'),
       ),
-      body:
-      Column(
+      body: Column(
         children: [
           OutlinedButton(
-            child:Text('click here!!') ,
-            onPressed: (){
+            child: Text('click here!!'),
+            onPressed: () {
               print('Text button Tapped');
             },
-            onLongPress: (){
+            onLongPress: () {
               print('Text long pressed!!');
             },
           ),
           TextButton(
-            child: Text('click here!!',style: TextStyle(color: Colors.green),),
+            child: Text(
+              'click here!!',
+              style: TextStyle(color: Colors.green),
+            ),
             onPressed: () {
               print('Text button tapped!!');
-            } ,
-            onLongPress: (){
+            },
+            onLongPress: () {
               print('text long pressed');
-            },),ElevatedButton(
-            child: Text('click here!!',style: TextStyle(color: Colors.green),),
+            },
+          ),
+          ElevatedButton(
+            child: Text(
+              'click here!!',
+              style: TextStyle(color: Colors.green),
+            ),
             onPressed: () {
               print('Text button tapped!!');
-            } ,
-            onLongPress: (){
+            },
+            onLongPress: () {
               print('text long pressed');
-            },)
-
+            },
+          )
         ],
       ),
-
-
     );
   }
 }

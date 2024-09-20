@@ -15,7 +15,7 @@ class _UserloginPageState extends State<UserloginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown.shade50,
+      backgroundColor: Colors.brown.shade100,
       appBar: AppBar(
         title: Center(child: Text("")),
         backgroundColor: Colors.brown,
@@ -34,7 +34,7 @@ class _UserloginPageState extends State<UserloginPage> {
 
         ),
           Padding(
-            padding: const EdgeInsets.all(25.0),
+            padding: const EdgeInsets.all(16.0),
             child: Center(
               child: Container(
                 width: 300,

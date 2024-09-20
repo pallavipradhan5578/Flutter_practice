@@ -11,9 +11,7 @@ class _ContainerDecorationState extends State<ContainerDecoration> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.brown.shade100,
-      ),
+
       body: Center(
         child: Container(
           height: 100,

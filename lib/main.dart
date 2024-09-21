@@ -1,23 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/Expanded_widget.dart';
-import 'package:hello_world/container_decoration.dart';
-import 'package:hello_world/list_view.dart';
-import 'package:hello_world/margin/margin_widget.dart';
-import 'package:hello_world/padding_widget.dart';
-
-import 'package:hello_world/container_widget.dart';
-import 'package:hello_world/practics_only.dart';
-import 'package:hello_world/scrooll_view.dart';
-
-import 'package:hello_world/text_fieldwidget.dart';
-import 'package:hello_world/userlogin_page.dart';
-
-//import 'package:hello_world/longin_page.dart';
-
-import 'inkwell_widget.dart';
+import 'package:hello_world/dailypractics.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: MarginWidget()
+  runApp(MaterialApp(debugShowCheckedModeBanner: false,
+      home: Dailypractics()
 
       //   Scaffold(
       //     backgroundColor: Colors.teal,

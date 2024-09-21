@@ -74,17 +74,10 @@ class _UserloginPageState extends State<UserloginPage> {
                               borderRadius: BorderRadius.circular(20),
                               borderSide: BorderSide(
                                   color: Colors.grey.shade300, width: 1)),
-
-
                           prefixIcon: Icon(
                             Icons.person,
                             color: Colors.grey,
                           ),
-
-
-
-
-
                         ),
                       ),
                       Container(
@@ -133,8 +126,7 @@ class _UserloginPageState extends State<UserloginPage> {
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 15
-                            ),
+                                fontSize: 15),
                           ),
                         ),
                       ),

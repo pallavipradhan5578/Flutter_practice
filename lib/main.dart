@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/Expanded_widget.dart';
 import 'package:hello_world/container_decoration.dart';
 import 'package:hello_world/list_view.dart';
+import 'package:hello_world/margin/margin_widget.dart';
 import 'package:hello_world/padding_widget.dart';
 
 import 'package:hello_world/container_widget.dart';
@@ -16,7 +17,7 @@ import 'package:hello_world/userlogin_page.dart';
 import 'inkwell_widget.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: ExpandedWidget()
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: MarginWidget()
 
       //   Scaffold(
       //     backgroundColor: Colors.teal,

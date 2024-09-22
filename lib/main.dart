@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/dailypractics.dart';
+import 'package:hello_world/driven2_page.dart';
+import 'package:hello_world/listview_builder.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false,
-      home: Dailypractics()
+  runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
+    primarySwatch: Colors.red
+  ),
+      home:  Driven2Page()
+
 
       //   Scaffold(
       //     backgroundColor: Colors.teal,

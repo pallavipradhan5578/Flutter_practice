@@ -85,7 +85,6 @@ class _UserloginPageState extends State<UserloginPage> {
                       ),
                       TextField(
                         controller: passwordText,
-                        obscureText: true,
                         obscuringCharacter: "*",
                         decoration: InputDecoration(
                           hintText: " Password ",

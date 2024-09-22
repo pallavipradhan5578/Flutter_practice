@@ -28,7 +28,7 @@ class _Driven2PageState extends State<Driven2Page> {
           padding: const EdgeInsets.only(top: 20.0, left: 35, right: 35),
           child: TextField(
             controller: usernameText,
-            decoration: InputDecoration(
+            decoration: InputDecoration(filled: true,fillColor: Colors.grey[10],
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
                     borderSide: BorderSide(color: Colors.red)),
@@ -42,8 +42,10 @@ class _Driven2PageState extends State<Driven2Page> {
           padding: const EdgeInsets.only(top: 20.0, left: 35, right: 35),
           child: TextField(
             controller: emailText,
-            decoration: InputDecoration(
+            decoration: InputDecoration(filled: true,
+              fillColor: Colors.grey[10],
               border: OutlineInputBorder(
+
                   borderRadius: BorderRadius.circular(16),
                   borderSide: BorderSide(color: Colors.red)),
               //  suffixText:"Email.id",
@@ -52,7 +54,7 @@ class _Driven2PageState extends State<Driven2Page> {
                 Icons.email,
                 color: Colors.green,
               ),
-            ),
+            ),style: TextStyle(color: Colors.red),
           ),
         ),
         Padding(
@@ -60,7 +62,7 @@ class _Driven2PageState extends State<Driven2Page> {
             child: TextField(
               obscureText: true,
               controller: passwordText,
-              decoration: InputDecoration(
+              decoration: InputDecoration(filled: true,fillColor: Colors.grey[10],
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(16),
                       borderSide: BorderSide(color: Colors.red)),

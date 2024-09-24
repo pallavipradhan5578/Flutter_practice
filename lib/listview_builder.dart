@@ -15,7 +15,9 @@ class _ListviewBuilderWidgetState extends State<ListviewBuilderWidget> {
     ),body: ListView.builder(itemBuilder: (context,index){
       return Text(arrNames[index],style: TextStyle(fontWeight: FontWeight.w500,fontSize:21),);
     },itemCount: arrNames.length,
+      reverse: true,
       itemExtent:100,
+      scrollDirection:Axis.horizontal ,
     ),
 
     );

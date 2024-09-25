@@ -10,7 +10,7 @@ class _ListviewSeparatedState extends State<ListviewSeparated> {
 
   @override
   Widget build(BuildContext context) {
-    var arrNames=['Ram','Siya','Ishan','Mish','Niya',"Manisha","Diya","Omkar"];
+    var arrNames=['Ram','Siya','Ishan','Misha','Niya',"Manisha","Diya","Omkar"];
     return Scaffold (
       body: ListView.separated(itemBuilder: (context,index){
         return Text(arrNames[index],style: TextStyle(fontSize: 21,fontWeight:

@@ -3,6 +3,7 @@ import 'package:hello_world/dailypractics.dart';
 import 'package:hello_world/driven2_page.dart';
 import 'package:hello_world/list_view.dart';
 import 'package:hello_world/driven_splasg_page.dart';
+import 'package:hello_world/list_view_practics.dart';
 import 'package:hello_world/listview_builder.dart';
 import 'package:hello_world/listview_separated.dart';
 
@@ -10,7 +11,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home:  ListviewSeparated()
+      home:  ListViewPractics()
 
 
       //   Scaffold(

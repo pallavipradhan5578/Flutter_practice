@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/card_widget.dart';
 import 'package:hello_world/circleavatar_widget.dart';
 
 import 'package:hello_world/dailypractics.dart';
@@ -14,7 +15,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home: CircleavatarWidget2 ()
+      home: CardWidget ()
 
 
       //   Scaffold(

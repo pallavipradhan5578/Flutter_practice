@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/circle_avatar_widget.dart';
 import 'package:hello_world/dailypractics.dart';
 import 'package:hello_world/driven2_page.dart';
 import 'package:hello_world/list_tile.dart';
@@ -12,7 +13,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home:  ListTileWidget()
+      home:  CircleAvatarWidget()
 
 
       //   Scaffold(

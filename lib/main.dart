@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/dailypractics.dart';
 import 'package:hello_world/driven2_page.dart';
+import 'package:hello_world/list_tile.dart';
 import 'package:hello_world/list_view.dart';
 import 'package:hello_world/driven_splasg_page.dart';
 import 'package:hello_world/list_view_practics.dart';
@@ -11,7 +12,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home:  ListViewPractics()
+      home:  ListTileWidget()
 
 
       //   Scaffold(

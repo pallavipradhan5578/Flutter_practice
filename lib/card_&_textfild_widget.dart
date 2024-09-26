@@ -39,13 +39,27 @@ class _practicsCardTextfieldState extends State<practicsCardTextfield> {
               Padding(
                 padding: const EdgeInsets.all(18.0),
                 child: Container(height: 200,width: 200,
-                  child: Card(shadowColor: Colors.blue,
-                    elevation: 12,child: Center(child: Padding(
-                      padding: const EdgeInsets.only(left: 40.0),
-                      child: Text("Hello World",style: TextStyle(fontSize: 29,
-                          fontWeight: FontWeight.bold),),
-                    )),color: Colors.cyan,
+                  child: SingleChildScrollView(scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
 
+Card(shadowColor: Colors.blue,
+                          elevation: 12,child: Center(child: Padding(
+                            padding: const EdgeInsets.only(left: 40.0),
+                            child: Text("Hello World",style: TextStyle(fontSize: 29,
+                                fontWeight: FontWeight.bold),),
+                          )),color: Colors.cyan,
+
+                        ),Card(shadowColor: Colors.blue,
+                          elevation: 12,child: Center(child: Padding(
+                            padding: const EdgeInsets.only(left: 40.0),
+                            child: Text("Hello World",style: TextStyle(fontSize: 29,
+                                fontWeight: FontWeight.bold),),
+                          )),color: Colors.cyan,
+
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

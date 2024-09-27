@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world/card_&_textfild_widget.dart';
 import 'package:hello_world/card_widget.dart';
 import 'package:hello_world/circleavatar_widget.dart';
+import 'package:hello_world/circleavtar.dart';
 
 import 'package:hello_world/dailypractics.dart';
 import 'package:hello_world/driven2_page.dart';
@@ -16,7 +17,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home: practicsCardTextfield  ()
+      home: Cicleavtarpractics  ()
 
 
       //   Scaffold(

@@ -11,18 +11,39 @@ class _practicslistState extends State<practicslist> { var arrNames=["Krishna","
   Widget build(BuildContext context) {
 
 
-    return Scaffold(body: ListView.separated(itemBuilder: (context,index) {
-      return ListTile(
-        //leading: Text("${index+1}"),
-        title:Text(arrNames[index]),
-        subtitle:Text('number') ,
-        trailing: Icon(Icons.add),
+    return Scaffold(appBar: AppBar(title: Text("Listview widget"),backgroundColor: Colors.cyan,
+    ),body: ListView(
+      scrollDirection: Axis.vertical,
 
-      );
-    },itemCount: arrNames.length,
-        separatorBuilder: (context,index) {
-          return Divider(height: 100, thickness: 2,);
-        })
+      reverse: true,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("One",style: TextStyle(fontSize: 25),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Two",style: TextStyle(fontSize: 25,),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Three",style: TextStyle(fontSize: 25),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Four",style: TextStyle(fontSize: 25,),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Five",style: TextStyle(fontSize: 25),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Six",style: TextStyle(fontSize: 25,),),
+        ),
+      ],
+    ),
+
 
     );
   }

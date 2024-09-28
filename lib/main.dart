@@ -12,13 +12,14 @@ import 'package:hello_world/driven_splasg_page.dart';
 import 'package:hello_world/list_view_practics.dart';
 import 'package:hello_world/listview_builder.dart';
 import 'package:hello_world/listview_separated.dart';
+import 'package:hello_world/listviewseparated.dart';
 import 'package:hello_world/practicsCard.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home: Practicscard  ()
+      home: practicslist  ()
 
 
       //   Scaffold(

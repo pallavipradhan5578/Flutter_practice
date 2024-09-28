@@ -6,44 +6,23 @@ class practicslist extends StatefulWidget {
   State<practicslist> createState() => _practicslistState();
 }
 
-class _practicslistState extends State<practicslist> { var arrNames=["Krishna","Arjun","Abhimanyu","bhism","karn",'Subhadra',"Panchali"];
+class _practicslistState extends State<practicslist> {
   @override
   Widget build(BuildContext context) {
+    return Scaffold(appBar:AppBar(backgroundColor: Colors.brown,
+      title: Center(child: Text("Margin & Padding",style: TextStyle(color: Colors.white),)),)
+      ,body:
+      Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Container(
+          width: 100,height: 100,color: Colors.cyan,
+          margin: const EdgeInsets.only(top: 12,left: 32),child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Hello"),
+        ),
 
-
-    return Scaffold(appBar: AppBar(title: Text("Listview widget"),backgroundColor: Colors.cyan,
-    ),body: ListView(
-      scrollDirection: Axis.vertical,
-
-      reverse: true,
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text("One",style: TextStyle(fontSize: 25),),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text("Two",style: TextStyle(fontSize: 25,),),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text("Three",style: TextStyle(fontSize: 25),),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text("Four",style: TextStyle(fontSize: 25,),),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text("Five",style: TextStyle(fontSize: 25),),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text("Six",style: TextStyle(fontSize: 25,),),
-        ),
-      ],
-    ),
-
+      ),
 
     );
   }

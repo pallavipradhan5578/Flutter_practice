@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/assets/listview_separated.dart';
 import 'package:hello_world/card_&_textfild_widget.dart';
 import 'package:hello_world/card_widget.dart';
 import 'package:hello_world/circleavatar_widget.dart';
@@ -20,7 +21,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home: InkwelWidgetPractics  ()
+      home: CustomListView(),
 
 
       //   Scaffold(

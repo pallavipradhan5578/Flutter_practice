@@ -17,7 +17,7 @@ class _DatePickerState extends State<DatePicker> {
     Colors.amber,
     Colors.purple,
     Colors.blue,
-    Colors.red,
+    Colors.red.shade300,
     Colors.brown,
     Colors.deepOrange,
     Colors.pink,
@@ -26,51 +26,53 @@ class _DatePickerState extends State<DatePicker> {
 
     return Scaffold(appBar: AppBar(backgroundColor: Colors.grey.shade300,
     title:Text ("GridView.Count"),),
-      body: GridView.count(crossAxisCount: 2,
-      children: [
+      body: Container(width: 300,
+        child: GridView.count(crossAxisCount: 3,
+        children: [
 
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[0],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[1],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[2],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[3],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[4],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[5],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[6],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[7],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[8],),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(color: arrColors[9],),
-        ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[0],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[1],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[2],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[3],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[4],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[5],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[6],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[7],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[8],),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(color: arrColors[9],),
+          ),
 
-      ],),
+        ],),
+      ),
     );
   }
 }

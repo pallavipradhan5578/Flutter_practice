@@ -27,11 +27,11 @@ class _CustomListViewState extends State<CustomListView> {
         itemBuilder: (context, index) { // Correcting `item` to `index`
           return ListTile(
             leading: CircleAvatar(radius: 25,backgroundColor: Colors.green,
-            //  child: Image.network("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",),
+              //child: Image.network("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",),
             ), // Display the index
             title: Text(arrNames[index]), // Display the name from the list
             subtitle: Text('hello'), // Placeholder subtitle
-            trailing: Icon(Icons.notifications), // Notification icon
+            trailing: Icon(Icons.timer), // Notification icon
           );
         },
         separatorBuilder: (context, index) {

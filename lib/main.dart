@@ -6,6 +6,7 @@ import 'package:hello_world/circleavatar_widget.dart';
 import 'package:hello_world/circleavtar.dart';
 
 import 'package:hello_world/dailypractics.dart';
+import 'package:hello_world/date_picker.dart';
 import 'package:hello_world/driven2_page.dart';
 import 'package:hello_world/inkwel_widget.dart';
 import 'package:hello_world/list_tile.dart';
@@ -15,13 +16,15 @@ import 'package:hello_world/list_view_practics.dart';
 import 'package:hello_world/listview_builder.dart';
 import 'package:hello_world/listview_separated.dart';
 import 'package:hello_world/listviewseparated.dart';
+import 'package:hello_world/mystatus_page.dart';
 import 'package:hello_world/practicsCard.dart';
+import 'package:hello_world/whatsapp_splash%20_page.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home: CustomListView(),
+      home: DatePicker(),
 
 
       //   Scaffold(

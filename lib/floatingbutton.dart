@@ -13,26 +13,33 @@ class _FloatingbuttonState extends State<Floatingbutton> {
     return Scaffold(
       backgroundColor: Colors.cyan,
       appBar: AppBar(),
-      body: Container(
-        width: 530,
-        height: 530,
-        color: Colors.orange,
-        child: Stack(
-          children: [
-            Center(
-              child: Container(
-                width: 320,
-                height: 320,
-                color: Colors.blueGrey,
-                child: Positioned(
-                  right: 21,
-                  bottom: 21,
-                  child: Center(child: Text("Hello",style: TextStyle(fontSize: 40),))
-                ),
-              ),
-            )
-          ],
-        ),
+      body: Column(
+        children: [
+          Container(
+            width: 530,
+            height: 530,
+            color: Colors.orange,
+            child: Stack(
+              children: [
+                Center(
+                  child: Container(
+                    width: 320,
+                    height: 320,
+                    color: Colors.blueGrey,
+                    child: Positioned(
+                      right: 21,
+                      bottom: 21,
+                      child: Center(child: Text("Hello",style: TextStyle(fontSize: 40),))
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
+
+
+
+        ],
       ),
     );
   }

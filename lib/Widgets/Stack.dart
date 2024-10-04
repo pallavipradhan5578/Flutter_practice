@@ -31,35 +31,35 @@ class _StackWidgetState extends State<StackWidget> {
                 ],
               ),
             ),Card(
-            child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:300,width:300,color:Colors.green,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.green,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.blue,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.brown,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.white,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.red,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.green,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.green,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.blue,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.brown,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.white,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.red,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.green,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:200,width:300,color:Colors.green,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.blue,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
-            child: Container(height:100,width:100,color:Colors.brown,child: Center(child: Text("Hello"))),color: Colors.purple,elevation: 12,
+            child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             )
           ],
         ),

@@ -20,7 +20,8 @@ class _StackWidgetState extends State<StackWidget> {
             Positioned(left: 50,right: 50,top: 50,bottom: 50,
               child: Container(
                    // width:50 ,height: 50,
-                color: Colors.purple,
+                color: Colors.black,
+                child: IconButton(onPressed: (){}, icon: Icon(Icons.add,color: Colors.white,)),
 
                     ),
             ),

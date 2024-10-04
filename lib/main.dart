@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/Widgets/Exdpanded1.dart';
 import 'package:hello_world/Widgets/Stack.dart';
 import 'package:hello_world/assets/listview_separated.dart';
 import 'package:hello_world/callbackfunction.dart';
@@ -27,7 +28,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-      home :StackWidget(),
+      home: Exdpanded1(),
 
 
       //   Scaffold(

@@ -1,40 +1,34 @@
 import 'package:flutter/material.dart';
-class ContainerDecoration extends StatefulWidget {
-  const ContainerDecoration({super.key});
+import 'package:flutter/material.dart';
 
-  @override
-  State<ContainerDecoration> createState() => _ContainerDecorationState();
+void main() {
+  runApp(MyApp());
 }
 
-class _ContainerDecorationState extends State<ContainerDecoration> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
- return Scaffold(body:
-     Center(
-       child: Container(
-         width: 200,
-         height: 200,
-         decoration: BoxDecoration(
-           color: Colors.blue, // Background color
-           borderRadius: BorderRadius.circular(15), // Rounded corners
-           boxShadow: [
-             BoxShadow(
-               color: Colors.grey.withOpacity(0.5),
-               spreadRadius: 5,
-               blurRadius: 7,
-               offset: Offset(0, 3), // Shadow position
-             ),
-           ],
-           border: Border.all(
-             color: Colors.black, // Border color
-             width: 2,           // Border width
-           ),
-         ),
-       ),
-     )
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("ListView Example")),
+        body: ListViewPractice(),
+      ),
+    );
+  }
+}
 
- );
+class ListViewPractice extends StatelessWidget {
+  final List<String> items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
 
-
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      itemCount: items.length,
+      itemBuilder: (context, index) {
+        return ListTile(
+          title: Text(items[index]),
+        );
+      },
+    );
   }
 }

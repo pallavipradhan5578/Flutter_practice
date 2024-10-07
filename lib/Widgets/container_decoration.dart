@@ -1,34 +1,57 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
+class ContainerDecoration extends StatefulWidget {
+  const ContainerDecoration({super.key});
+
+  @override
+  State<ContainerDecoration> createState() => _ContainerDecorationState();
 }
 
-class MyApp extends StatelessWidget {
+class _ContainerDecorationState extends State<ContainerDecoration> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text("ListView Example")),
-        body: ListViewPractice(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Flutter Card Example'),
       ),
-    );
-  }
-}
+      body: Center(
+        child: Card(
+          elevation: 5, // Elevation to give the card a shadow
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15),
+          ),
+          color: Colors.lightBlueAccent, // Background color of the card
+          child: Container(
+            width: 300,
+            height: 150,
+            padding: EdgeInsets.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  'Flutter Card Widget',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'This is a simple card in Flutter.',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white70,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
 
-class ListViewPractice extends StatelessWidget {
-  final List<String> items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
 
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: items.length,
-      itemBuilder: (context, index) {
-        return ListTile(
-          title: Text(items[index]),
-        );
-      },
     );
   }
 }

@@ -1,169 +1,41 @@
 import 'package:flutter/material.dart';
-
-class ContainerDecoration extends StatefulWidget {
-  const ContainerDecoration({super.key});
+class practics12 extends StatefulWidget {
+  const practics12({super.key});
 
   @override
-  State<ContainerDecoration> createState() => _ContainerDecorationState();
+  State<practics12> createState() => _practics12State();
 }
 
-class _ContainerDecorationState extends State<ContainerDecoration> {
-  var emailText = TextEditingController();
-  var passwordText = TextEditingController();
+class _practics12State extends State<practics12> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold( body: Column(
+    return Scaffold(body: Column(mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding: const EdgeInsets.all(48.0),
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Text(
-                  "Welcome Back",
-                  style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                ),
-              ),
-              Text(
-                "    Enter your credential to login",
-                style: TextStyle(fontSize: 15),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(
+        Container(
+          width: 200,
           height: 100,
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Center(
-            child: Container(
-              width: 300,
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    TextField(
-                      keyboardType: TextInputType.number,
-
-                      controller: emailText,
-                      // enabled: false,
-                      decoration: InputDecoration(
-                        fillColor: Colors.purple.withOpacity(0.1),
-                        filled: true,
-                        hintText: "Username ",
-                        hintStyle:
-                        TextStyle(color: Colors.black54, fontSize: 14.0),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
-                                color: Colors.grey.shade300, width: 1)),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(
-                              color: Colors.grey.shade300, width: 1),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
-                                color: Colors.grey.shade300, width: 1)),
-                        disabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(20),
-                            borderSide: BorderSide(
-                                color: Colors.grey.shade300, width: 1)),
-                        prefixIcon: Icon(
-                          Icons.person,
-                          color: Colors.grey,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      height: 10,
-                    ),
-                    TextField(
-                      controller: passwordText,
-                      obscuringCharacter: "*",
-                      decoration: InputDecoration(
-                        hintText: " Password ",
-                        //focusedBorder: OutlineInputBorder(
-                        // borderRadius: BorderRadius.circular(11),
-                        //  borderSide:
-                        //  BorderSide(color: Colors.deepOrangeAccent, width: 2)),
-                        border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(11),
-                            borderSide: BorderSide(
-                                color: Colors.deepOrange, width: 2)),
-                        suffixIcon: IconButton(
-                          icon: Icon(
-                            Icons.remove_red_eye,
-                            color: Colors.black,
-                          ),
-                          onPressed: () {},
-                        ),
-                        prefixIcon: Icon(
-                          Icons.lock,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ElevatedButton(
-                        onPressed: () {
-                          String uEmail = emailText.text.toString();
-                          String uPass = passwordText.text;
-                          print("Email: $uEmail,pass: $uPass");
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.purpleAccent,
-                        ),
-                        child: Text(
-                          'Login',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 15),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(32.0),
-                      child: Center(
-                          child: Text(
-                            " Forgot password?",
-                            style: TextStyle(
-                                color: Colors.purpleAccent,
-                                fontWeight: FontWeight.w900,
-                                fontSize: 15),
-                          )),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(32.0),
-                      child: Center(
-                          child: Row(
-                            children: [
-                              Center(
-                                  child: Text(
-                                    "Don't have an account? ",
-                                    style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w300,
-                                        fontSize: 15),
-                                  )),
-                              Text("Sing Up",
-                                  style: TextStyle(
-                                      color: Colors.purpleAccent,
-                                      fontWeight: FontWeight.w900,
-                                      fontSize: 15))
-                            ],
-                          )),
-                    ),
-                  ]),
-            ),
-          ),
+          color: Colors.cyan,
+          child: Text('Hello'),
+        ),Container(
+          width: 200,
+          height: 100,
+          color: Colors.cyan,
+          child: Text('Hello Devlops'),
+        ),Container(
+          width: 200,
+          height: 100,
+          color: Colors.cyan,
+          child: Text('How are you ?'),
+        ),Container(
+          width: 200,
+          height: 100,
+          color: Colors.cyan,
+          child: Text('I am fine'),
         ),
       ],
     ),
-      );
-  }}
+
+    );
+  }
+}

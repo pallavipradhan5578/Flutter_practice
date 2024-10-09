@@ -30,7 +30,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home: ContainerDecoration(),
+    home:  practics12(),
 
 
       //   Scaffold(

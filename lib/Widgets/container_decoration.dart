@@ -9,32 +9,26 @@ class practics12 extends StatefulWidget {
 class _practics12State extends State<practics12> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Container(
-          width: 200,
-          height: 100,
-          color: Colors.cyan,
-          child: Text('Hello'),
-        ),Container(
-          width: 200,
-          height: 100,
-          color: Colors.cyan,
-          child: Text('Hello Devlops'),
-        ),Container(
-          width: 200,
-          height: 100,
-          color: Colors.cyan,
-          child: Text('How are you ?'),
-        ),Container(
-          width: 200,
-          height: 100,
-          color: Colors.cyan,
-          child: Text('I am fine'),
+    return Scaffold(body:InkWell(onTap: (){
+      print("Tapped on container");
+    },onLongPress: (){
+      print(" Long press on container");
+    },onDoubleTap: (){
+      print("double tapped on container");
+    },
+      child: Center(
+        child: Container( width: 200,
+          height: 200,color: Colors.blueGrey,
+          child: Center(child: InkWell(onTap: (){
+            print('Text widget tapped');
+          },
+              child: Text("Click Here", style: TextStyle(fontSize: 30,fontWeight: FontWeight.w700)))),
+
         ),
-      ],
+      ),
     ),
+
+
 
     );
   }

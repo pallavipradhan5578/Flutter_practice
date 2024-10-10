@@ -13,22 +13,23 @@ class _ListviewState extends State<Listview> {
         body:Padding(
           padding: const EdgeInsets.all(48.0),
           child: ListView(scrollDirection: Axis.horizontal,
+           reverse: true,
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+                child: Text("One",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+                child: Text("Two",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+                child: Text("Three",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+                child: Text("Four",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
               )
             ],
           ),

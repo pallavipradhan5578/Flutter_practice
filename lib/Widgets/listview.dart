@@ -10,39 +10,29 @@ class _ListviewState extends State<Listview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Sunday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Monday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Tuesday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Wednesday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Thursday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Friday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Saturday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
-            ),
-          ],
-
-        )
+        body:Padding(
+          padding: const EdgeInsets.all(48.0),
+          child: ListView(scrollDirection: Axis.horizontal,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("Hello",style: TextStyle(fontSize: 21,fontWeight:FontWeight.bold),),
+              )
+            ],
+          ),
+        ) ,
     );
   }
 }

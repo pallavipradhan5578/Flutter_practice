@@ -9,24 +9,41 @@ class practics12 extends StatefulWidget {
 class _practics12State extends State<practics12> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body:InkWell(onTap: (){
-      print("Tapped on container");
-    },onLongPress: (){
-      print(" Long press on container");
-    },onDoubleTap: (){
-      print("double tapped on container");
-    },
-      child: Center(
-        child: Container( width: 200,
-          height: 200,color: Colors.blueGrey,
-          child: Center(child: InkWell(onTap: (){
-            print('Text widget tapped');
-          },
-              child: Text("Click Here", style: TextStyle(fontSize: 30,fontWeight: FontWeight.w700)))),
-
+    return Scaffold(
+      appBar: AppBar(),body: ListView(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Sunday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
         ),
-      ),
-    ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Monday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Tuesday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Wednesday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Thursday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Friday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text("Saturday",style: TextStyle(fontSize: 21,fontWeight: FontWeight.w500),),
+        ),
+      ],
+
+    )
+      ,
 
 
 

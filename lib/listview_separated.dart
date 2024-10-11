@@ -22,7 +22,8 @@ class _ListviewSeparatedState extends State<ListviewSeparated> {
 
         },
 
-    ));
+    )
+    );
 
     }
 

@@ -21,7 +21,7 @@ class _ListviewState extends State<Listview> {
         backgroundColor: Colors.brown,
       ),
       body: ListView.builder(
-        itemCount: arrNames.length,
+        itemCount: arrNames.length,reverse: true,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.all(8.0),

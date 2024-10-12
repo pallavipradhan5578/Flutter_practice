@@ -13,7 +13,20 @@ class _ListviewBuilderWidgetState extends State<ListviewBuilderWidget> {
     return Scaffold(
       body: SingleChildScrollView(scrollDirection: Axis.vertical,
         child: Column(
-          children: [
+          children: [Center(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(height: 170,width: 170,color: Colors.cyanAccent,
+                child: Card(shadowColor: Colors.blue,
+                    elevation: 12,child: Center(child: Padding(
+                      padding: const EdgeInsets.only(left: 40.0),
+                      child: Text("Hello World",style: TextStyle(fontSize: 29,fontWeight: FontWeight.bold),),
+                    ))
+
+                ),
+              ),
+            ),
+          ),
             Center(
               child: Stack(
                 children: [
@@ -61,7 +74,20 @@ class _ListviewBuilderWidgetState extends State<ListviewBuilderWidget> {
               child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
             ),Card(
               child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            )
+            ),Center(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(height: 170,width: 170,color: Colors.cyanAccent,
+                  child: Card(shadowColor: Colors.blue,
+                      elevation: 12,child: Center(child: Padding(
+                        padding: const EdgeInsets.only(left: 40.0),
+                        child: Text("Hello World",style: TextStyle(fontSize: 29,fontWeight: FontWeight.bold),),
+                      ))
+
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

@@ -13,25 +13,7 @@ class _ListviewState extends State<Listview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Hello",
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-        ),
-        backgroundColor: Colors.brown,
-      ),
-      body: ListView.builder(
-        itemCount: arrNames.length,reverse: true,
-        itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              arrNames[index],  // Corrected here
-              style: TextStyle(fontSize: 25),
-            ),
-          );
-        },
-      ),
+
     );
   }
 }

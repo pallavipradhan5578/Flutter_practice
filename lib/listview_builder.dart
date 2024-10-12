@@ -7,90 +7,27 @@ class ListviewBuilderWidget extends StatefulWidget {
 }
 
 class _ListviewBuilderWidgetState extends State<ListviewBuilderWidget> {
-  var arrNames=['pallu','shivi','ruhi','pari','sona'];
+
+  var arrNames=["Krishna","Arjun","Abhimanyu","bhism","karn",'Subhadra',"Panchali"];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(scrollDirection: Axis.vertical,
-        child: Column(
-          children: [Center(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 170,width: 170,color: Colors.cyanAccent,
-                child: Card(shadowColor: Colors.blue,
-                    elevation: 12,child: Center(child: Padding(
-                      padding: const EdgeInsets.only(left: 40.0),
-                      child: Text("Hello World",style: TextStyle(fontSize: 29,fontWeight: FontWeight.bold),),
-                    ))
-
-                ),
-              ),
-            ),
-          ),
-            Center(
-              child: Stack(
-                children: [
-                  Container(
-                    width:300 ,height: 300,color: Colors.blueGrey,
-
-                  ),
-                  Positioned(left: 50,right: 50,top: 50,bottom: 50,
-                    child: Container(
-                      // width:50 ,height: 50,
-                      color: Colors.grey,
-                      child: IconButton(onPressed: (){}, icon: Icon(Icons.add,color: Colors.white,)),
-
-                    ),
-                  ),
-                ],
-              ),
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.green,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.green,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.white,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.red,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:200,width:300,color:Colors.green,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.blue,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Card(
-              child: Container(height:300,width:300,color:Colors.brown,child: Center(child: Text("Hello",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold)))),color: Colors.purple,elevation: 12,
-            ),Center(
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(height: 170,width: 170,color: Colors.cyanAccent,
-                  child: Card(shadowColor: Colors.blue,
-                      elevation: 12,child: Center(child: Padding(
-                        padding: const EdgeInsets.only(left: 40.0),
-                        child: Text("Hello World",style: TextStyle(fontSize: 29,fontWeight: FontWeight.bold),),
-                      ))
-
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+      appBar:AppBar(backgroundColor: Colors.brown,
+        title: Center(child: Text("Margin & Padding",style: TextStyle(color: Colors.white),)),)
+      ,body:
+    Padding(
+      padding: const EdgeInsets.all(18.0),
+      child: Container(
+        width: 100,height: 100,color: Colors.cyan,
+        margin: const EdgeInsets.only(top: 12,left: 32),child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Text("Hello"),
       ),
+
+      ),
+    ),
+
+
     );
   }
 }

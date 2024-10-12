@@ -8,7 +8,8 @@ class Listview extends StatefulWidget {
 }
 
 class _ListviewState extends State<Listview> {
-  var arrNames = ['Siya', 'Diya', 'Miya', 'Riya', 'sona'];
+  var arrNames = ['Siya', 'Diya', 'Miya', 'Riya', 'Sona'];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,11 +19,19 @@ class _ListviewState extends State<Listview> {
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         backgroundColor: Colors.brown,
-      ),body: ListView.builder(itemBuilder: (context,index){
-        return Text('One',style: TextStyle(fontSize: 25),);
-    }
-    ,itemCount: 5,)
-
+      ),
+      body: ListView.builder(
+        itemCount: arrNames.length,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              arrNames[index],  // Corrected here
+              style: TextStyle(fontSize: 25),
+            ),
+          );
+        },
+      ),
     );
   }
 }

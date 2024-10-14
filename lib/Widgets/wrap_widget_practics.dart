@@ -13,6 +13,7 @@ class _WrapWidgetPracticsState extends State<WrapWidgetPractics> {
       title: Text("My App"),
       centerTitle: true,backgroundColor: Colors.blue,
     ),body: Wrap(
+      spacing: 12,runSpacing: 12,
       children: [
 
         Container(

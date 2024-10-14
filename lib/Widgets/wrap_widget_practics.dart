@@ -12,34 +12,39 @@ class _WrapWidgetPracticsState extends State<WrapWidgetPractics> {
     return Scaffold(appBar: AppBar(
       title: Text("My App"),
       centerTitle: true,backgroundColor: Colors.blue,
-    ),body: Wrap(
-      spacing: 12,runSpacing: 12,
-      children: [
+    ),body: Container(width: double.infinity,
+      child: Wrap(
+        spacing: 7,runSpacing: 7,
+        direction: Axis.horizontal,
+        alignment: WrapAlignment.spaceEvenly,
 
-        Container(
-            height: 100,width: 100,color: Colors.green
-        ),Container(
-            height: 100,width: 100,color: Colors.red
-        ),Container(
-            height: 100,width: 100,color: Colors.blue
-        ),Container(
-            height: 100,width: 100,color: Colors.purple
-        ),Container(
-            height: 100,width: 100,color: Colors.orange
-        ),Container(
-            height: 100,width: 100,color: Colors.grey
-        ),Container(
-            height: 100,width: 100,color: Colors.brown
-        ),Container(
-            height: 100,width: 100,color: Colors.blueGrey
-        ),Container(
-            height: 100,width: 100,color: Colors.cyan
-        ),Container(
-            height: 100,width: 100,color: Colors.lightGreen
-        ),Container(
-            height: 100,width: 100,color: Colors.yellow
-        )
-      ],
+        children: [
+
+          Container(
+              height: 100,width: 100,color: Colors.green
+          ),Container(
+              height: 100,width: 100,color: Colors.red
+          ),Container(
+              height: 100,width: 100,color: Colors.blue
+          ),Container(
+              height: 100,width: 100,color: Colors.purple
+          ),Container(
+              height: 100,width: 100,color: Colors.orange
+          ),Container(
+              height: 100,width: 100,color: Colors.grey
+          ),Container(
+              height: 100,width: 100,color: Colors.brown
+          ),Container(
+              height: 100,width: 100,color: Colors.blueGrey
+          ),Container(
+              height: 100,width: 100,color: Colors.cyan
+          ),Container(
+              height: 100,width: 100,color: Colors.lightGreen
+          ),Container(
+              height: 100,width: 100,color: Colors.yellow
+          )
+        ],
+      ),
     ),
 
     );

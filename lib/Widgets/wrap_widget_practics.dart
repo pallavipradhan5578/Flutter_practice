@@ -13,10 +13,11 @@ class _WrapWidgetPracticsState extends State<WrapWidgetPractics> {
       title: Text("My App"),
       centerTitle: true,backgroundColor: Colors.blue,
     ),body: Container(width: double.infinity,
+      height: double.infinity,
       child: Wrap(
         spacing: 7,runSpacing: 7,
-        direction: Axis.horizontal,
-        alignment: WrapAlignment.spaceEvenly,
+        direction: Axis.vertical,
+        alignment: WrapAlignment.spaceAround,
 
         children: [
 

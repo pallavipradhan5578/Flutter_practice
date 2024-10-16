@@ -16,21 +16,21 @@ class _IconWidgetState extends State<IconWidget> {
         centerTitle: true,
         backgroundColor: Colors.orange,
       ),
-      body:
-          ListView.builder(
-            itemBuilder: (context, index) {
-              return ListTile(
-                leading: Icon(Icons.add_business_rounded,color:Colors.orange),
-                title: Text("Name"),
-                subtitle: Text("Product name"),
-                trailing: Icon(Icons.shopping_cart,color:Colors.orange ,),
-              );
-            },
-            itemCount: 9,
-            itemExtent: 100,
-          ),
-
-
+      body: Center(
+        child: Icon(
+          Icons.camera_alt,
+          size: 100,
+          color: Colors.orange,
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Action when the button is pressed
+          print("Floating Action Button Pressed");
+        },
+        backgroundColor: Colors.orange,
+        child: Icon(Icons.arrow_forward_sharp),
+      ),
     );
   }
 }

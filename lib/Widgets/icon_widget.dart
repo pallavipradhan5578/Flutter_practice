@@ -11,16 +11,26 @@ class _IconWidgetState extends State<IconWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Icon Widget"),centerTitle: true,
+      appBar: AppBar(
+        title: Text("Icon Widget"),
+        centerTitle: true,
         backgroundColor: Colors.orange,
       ),
-      body: Center(
-        child: Icon(
-          Icons.camera_alt,
-          size: 100,
-          color: Colors.orange,
-        ),
-      ),
+      body:
+          ListView.builder(
+            itemBuilder: (context, index) {
+              return ListTile(
+                leading: Icon(Icons.add_business_rounded,color:Colors.orange),
+                title: Text("Name"),
+                subtitle: Text("Product name"),
+                trailing: Icon(Icons.shopping_cart,color:Colors.orange ,),
+              );
+            },
+            itemCount: 9,
+            itemExtent: 100,
+          ),
+
+
     );
   }
 }

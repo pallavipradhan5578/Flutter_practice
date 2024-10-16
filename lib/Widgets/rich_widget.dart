@@ -16,7 +16,21 @@ class _RichWidgetState extends State<RichWidget> {
         backgroundColor: Colors.orange,
       ),
       body:
-          ListView.separated(itemBuilder: (context,index){
+          ListView.separated(
+              itemBuilder: (context, index) {
+                return Text(
+                  arrNames[index],
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                );
+              },
+              separatorBuilder: (context, index) {
+                return Divider(
+                  height: 100,
+                  thickness: 4,
+                );
+              },
+              itemCount: arrNames.length),
+          /*ListView.separated(itemBuilder: (context,index){
             return ListTile(leading: Text("${index}"),
               title: Text(arrNames[index]),
               subtitle: Text("Number"),
@@ -25,8 +39,8 @@ class _RichWidgetState extends State<RichWidget> {
             );
           },
               separatorBuilder: (context,index){
-            return Divider(height: 100,);
-              }, itemCount: arrNames.length)
+            return Divider(height: 30,);
+              }, itemCount: arrNames.length)*/
 
 
     );

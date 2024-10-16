@@ -5,6 +5,7 @@ import 'package:hello_world/Widgets/Widget.dart';
 import 'package:hello_world/Widgets/container_decoration.dart';
 import 'package:hello_world/Widgets/icon_widget.dart';
 import 'package:hello_world/Widgets/listview.dart';
+import 'package:hello_world/Widgets/pop_widget.dart';
 import 'package:hello_world/Widgets/rich_widget.dart';
 import 'package:hello_world/Widgets/wrap_widget_practics.dart';
 import 'package:hello_world/assets/listview_separated.dart';
@@ -34,7 +35,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home: RichWidget (),
+    home: HomePage(),
 
 
       //   Scaffold(

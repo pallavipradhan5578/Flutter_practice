@@ -26,7 +26,7 @@ class _RichWidgetState extends State<RichWidget> {
               separatorBuilder: (context, index) {
                 return Divider(
                   height: 100,
-                  thickness: 4,
+                  thickness: 2,
                 );
               },
               itemCount: arrNames.length),

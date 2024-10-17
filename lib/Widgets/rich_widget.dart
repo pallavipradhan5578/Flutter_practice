@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/Widgets/icon_widget.dart';
 
 class RichWidget extends StatefulWidget {
   const RichWidget({super.key});
@@ -18,14 +19,16 @@ class _RichWidgetState extends State<RichWidget> {
       body:
           ListView.separated(
               itemBuilder: (context, index) {
-                return Text(
-                  arrNames[index],
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                return ListTile(leading: CircleAvatar(backgroundColor: Colors.orange,radius: 40,),
+                  title:  Text(
+                    arrNames[index],
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                  ),subtitle: Text("Hello"),trailing: Text("12:00 PM"),
                 );
               },
               separatorBuilder: (context, index) {
                 return Divider(
-                  height: 100,
+                  height: 60,
                   thickness: 2,
                 );
               },
@@ -43,6 +46,16 @@ class _RichWidgetState extends State<RichWidget> {
               }, itemCount: arrNames.length)*/
 
 
-    );
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Navigate to the SecondScreen when the button is pressed
+          Navigator.pop(
+            context,
+            MaterialPageRoute(builder: (context) => IconWidget()),
+          );
+        },
+        backgroundColor: Colors.orange,
+        child: Icon(Icons.arrow_back_sharp),
+      ), );
   }
 }

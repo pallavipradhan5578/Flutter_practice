@@ -25,7 +25,7 @@ class _IconWidgetState extends State<IconWidget> {
       ),
       body: Center(
         child: Icon(
-          Icons.camera_alt,
+          Icons.call,
           size: 100,
           color: Colors.orange,
         ),

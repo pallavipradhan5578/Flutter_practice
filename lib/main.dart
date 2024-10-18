@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/Expanded_widget.dart';
 import 'package:hello_world/Widgets/Exdpanded1.dart';
 import 'package:hello_world/Widgets/Stack.dart';
 import 'package:hello_world/Widgets/Widget.dart';
@@ -35,7 +36,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home: IconWidget(),
+    home: ExpandedWidget(),
 
 
       //   Scaffold(

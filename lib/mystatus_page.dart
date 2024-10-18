@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var iteams=["Nor","Vira","Saniya","Taniya","trisha","Priyanka","Mona","Nor2","Vira2","Saniya","Taniya","trisha","Priyanka","Mona"];
     return Scaffold(
       appBar: AppBar(
         title: Text("Drawer Example"),backgroundColor: Colors.blue,
@@ -50,8 +51,25 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Text('Home Screen'),
+      body: ListView.separated(
+        padding: EdgeInsets.all(8.0),
+        itemCount: 12, // Number of ListTiles to show
+        itemBuilder: (context, index) {
+          return ListTile(
+            leading: Icon(Icons.label),
+            title: Text(iteams[index]), // Display item from the list
+            subtitle: Text('Description for ${iteams[index]}'), // Optional subtitle
+            onTap: () {
+              // Handle tap on the ListTile
+              ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('${iteams[index]} tapped!'))
+              );
+            },
+          );
+        },
+        separatorBuilder: (context, index) {
+          return Divider(); // A separator between each ListTile
+        },
       ),
     );
   }

@@ -56,8 +56,8 @@ class HomeScreen extends StatelessWidget {
         itemCount: 12, // Number of ListTiles to show
         itemBuilder: (context, index) {
           return ListTile(
-            leading: Icon(Icons.label),
-            title: Text(iteams[index]), // Display item from the list
+            leading: CircleAvatar(backgroundColor: Colors.blue,radius: 40,child: Text("Hi"),),
+            title: Text(iteams[index],style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),), // Display item from the list
             subtitle: Text('Description for ${iteams[index]}'), // Optional subtitle
             onTap: () {
               // Handle tap on the ListTile

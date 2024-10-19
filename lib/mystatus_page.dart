@@ -11,37 +11,32 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: TextField(
-        decoration: InputDecoration(
-          //labelText: 'Enter your text',
-          hintText: 'Search contacts',
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10.0),
+          decoration: InputDecoration(
+            hintText: 'Search contacts',
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.blue, width: 2.0),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey, width: 1.0),
+            ),
+            prefixIcon: Icon(Icons.search),
+            suffixIcon: Icon(Icons.mic),
           ),
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.blue, width: 2.0),
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: Colors.grey, width: 1.0),
-          ),
-          prefixIcon: Icon(Icons.search),
-          //prefixIcon: Icon(Icons.text_fields),
-          //suffixIcon: Icon(Icons.check_circle),
-          suffixIcon: Icon(Icons.mic)
         ),
-      ),
         backgroundColor: Colors.blue,
         actions: [
           PopupMenuButton<int>(
             icon: Icon(Icons.more_vert),
             onSelected: (value) {
               if (value == 1) {
-                // Open a new screen
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => NewScreen()),
                 );
               } else if (value == 2) {
-                // Show a popup dialog
                 showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
@@ -135,6 +130,48 @@ class HomeScreen extends StatelessWidget {
         separatorBuilder: (context, index) {
           return Divider(); // A separator between each ListTile
         },
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          _showKeypadDialog(context); // Show custom keypad dialog on press
+        },
+        child: Icon(Icons.dialpad), // Dialpad icon for the button
+        backgroundColor: Colors.blue,
+      ),
+    );
+  }
+
+  // Function to show custom keypad dialog
+  void _showKeypadDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text('Enter Number'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: 'Number',
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text("Cancel"),
+          ),
+          TextButton(
+            onPressed: () {
+              // Handle number entry logic
+              Navigator.pop(context);
+            },
+            child: Text("OK"),
+          ),
+        ],
       ),
     );
   }

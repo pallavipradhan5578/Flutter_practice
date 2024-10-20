@@ -8,6 +8,7 @@ import 'package:hello_world/Widgets/icon_widget.dart';
 import 'package:hello_world/Widgets/listview.dart';
 import 'package:hello_world/Widgets/pop_widget.dart';
 import 'package:hello_world/Widgets/rich_widget.dart';
+
 import 'package:hello_world/Widgets/wrap_widget_practics.dart';
 import 'package:hello_world/assets/listview_separated.dart';
 import 'package:hello_world/callbackfunction.dart';
@@ -36,7 +37,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home:HomeScreen(),
+    home:HomePage(),
 
 
       //   Scaffold(

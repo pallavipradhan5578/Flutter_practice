@@ -41,7 +41,8 @@ class HomePage extends StatelessWidget {
       title: Text(title),
       onTap: () {
         Navigator.of(context).pop(); // Close the dialog
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => page));
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => page));
       },
     );
   }
@@ -50,7 +51,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Page"),
+        title: Text(""),
+        centerTitle: true,
         actions: [
           IconButton(
             icon: Icon(Icons.more_vert_outlined),
@@ -60,8 +62,26 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Text("Home Page Content"),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Center(
+          child: Column(
+            children: [
+              Form(
+                child: TextFormField(
+                  decoration: InputDecoration(labelText: "Enter Email-Id"),
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              TextFormField(
+                decoration: InputDecoration(labelText: "Enter Password"),
+              ),
+              ElevatedButton(onPressed: () {}, child: Text("Login"))
+            ],
+          ),
+        ),
       ),
     );
   }

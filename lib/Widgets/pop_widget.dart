@@ -76,9 +76,17 @@ class HomePage extends StatelessWidget {
                 height: 20,
               ),
               TextFormField(
-                decoration: InputDecoration(labelText: "Enter Password"),
+                decoration: InputDecoration(labelText: "Enter Email-Id"),
               ),
-              ElevatedButton(onPressed: () {}, child: Text("Login"))
+              Padding(
+                padding: const EdgeInsets.only(top: 38.0),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: Text("Login",style:TextStyle(color: Colors.white,fontSize: 20) ,),
+                  style: ElevatedButton.styleFrom(minimumSize: Size(380, 50),backgroundColor: Colors.blue
+                  ),
+                ),
+              )
             ],
           ),
         ),

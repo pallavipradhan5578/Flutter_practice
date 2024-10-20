@@ -133,7 +133,7 @@ class HomeScreen extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          _showKeypadDialog(context); // Show custom keypad dialog on press
+          _showCustomKeypad(context); // Show the custom keypad on press
         },
         child: Icon(Icons.dialpad), // Dialpad icon for the button
         backgroundColor: Colors.blue,
@@ -141,38 +141,83 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Function to show custom keypad dialog
-  void _showKeypadDialog(BuildContext context) {
-    showDialog(
+  // Function to show custom keypad as a modal bottom sheet
+  void _showCustomKeypad(BuildContext context) {
+    showModalBottomSheet(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text('Enter Number'),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextField(
-              keyboardType: TextInputType.number,
-              decoration: InputDecoration(
-                labelText: 'Number',
-                border: OutlineInputBorder(),
+      builder: (context) {
+        String enteredNumber = "";
+        return StatefulBuilder(
+          builder: (context, setState) {
+            return Container(
+              padding: EdgeInsets.all(10),
+              height: 350,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Display entered number
+                  Text(
+                    enteredNumber,
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(height: 20),
+                  Expanded(
+                    child: GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        childAspectRatio: 1.5,
+                      ),
+                      itemCount: 12, // 10 digits + clear and backspace
+                      itemBuilder: (context, index) {
+                        // Define the button labels (0-9, clear, and backspace)
+                        String buttonText;
+                        if (index < 9) {
+                          buttonText = '${index + 1}';
+                        } else if (index == 9) {
+                          buttonText = 'Clear';
+                        } else if (index == 10) {
+                          buttonText = '0';
+                        } else {
+                          buttonText = '<'; // Backspace
+                        }
+
+                        return GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              if (buttonText == 'Clear') {
+                                enteredNumber = ""; // Clear input
+                              } else if (buttonText == '<') {
+                                if (enteredNumber.isNotEmpty) {
+                                  enteredNumber = enteredNumber.substring(
+                                      0, enteredNumber.length - 1); // Backspace
+                                }
+                              } else {
+                                enteredNumber += buttonText; // Append number
+                              }
+                            });
+                          },
+                          child: Card(
+                            color: Colors.blue[100],
+                            child: Center(
+                              child: Text(
+                                buttonText,
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ],
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: Text("Cancel"),
-          ),
-          TextButton(
-            onPressed: () {
-              // Handle number entry logic
-              Navigator.pop(context);
-            },
-            child: Text("OK"),
-          ),
-        ],
-      ),
+            );
+          },
+        );
+      },
     );
   }
 }

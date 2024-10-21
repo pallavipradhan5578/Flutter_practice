@@ -65,26 +65,36 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
+          child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Form(
                 child: TextFormField(
-                  decoration: InputDecoration(labelText: "Enter Email-Id"),
+                  decoration: InputDecoration(labelText: "Enter Email-Id",border: OutlineInputBorder()),
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
               TextFormField(
-                decoration: InputDecoration(labelText: "Enter Email-Id"),
+                decoration: InputDecoration(labelText: "Enter Password",border: OutlineInputBorder()),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 38.0),
                 child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text("Login",style:TextStyle(color: Colors.white,fontSize: 20) ,),
-                  style: ElevatedButton.styleFrom(minimumSize: Size(380, 50),backgroundColor: Colors.blue
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Option1Page(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Login",
+                    style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
+                  style: ElevatedButton.styleFrom(iconColor: Colors.blue,
+                      minimumSize: Size(380, 50), backgroundColor: Colors.blue),
                 ),
               )
             ],
@@ -100,12 +110,14 @@ class Option1Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("New group"),
+      appBar: AppBar(backgroundColor: Colors.blue,
+        title: Text(""),centerTitle: true,actions: [
+
+          IconButton(onPressed: (){}, icon: Icon(Icons.qr_code_scanner_outlined)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.camera_alt,),),
+          IconButton(onPressed: (){}, icon: Icon(Icons.more_vert_outlined,),),],
       ),
-      body: Center(
-        child: Text("This is Option 1 Page"),
-      ),
+      body:Text("") ,
     );
   }
 }

@@ -1,43 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/Expanded_widget.dart';
-import 'package:hello_world/Widgets/Exdpanded1.dart';
-import 'package:hello_world/Widgets/Stack.dart';
-import 'package:hello_world/Widgets/Widget.dart';
-import 'package:hello_world/Widgets/container_decoration.dart';
-import 'package:hello_world/Widgets/icon_widget.dart';
-import 'package:hello_world/Widgets/listview.dart';
+
+import 'package:hello_world/Widgets/learnapi.dart';
 import 'package:hello_world/Widgets/pop_widget.dart';
-import 'package:hello_world/Widgets/rich_widget.dart';
-
-import 'package:hello_world/Widgets/wrap_widget_practics.dart';
-import 'package:hello_world/assets/listview_separated.dart';
-import 'package:hello_world/callbackfunction.dart';
-import 'package:hello_world/card_&_textfild_widget.dart';
-import 'package:hello_world/card_widget.dart';
-import 'package:hello_world/circleavatar_widget.dart';
-import 'package:hello_world/circleavtar.dart';
-
-import 'package:hello_world/dailypractics.dart';
-import 'package:hello_world/date_picker.dart';
-import 'package:hello_world/driven2_page.dart';
-import 'package:hello_world/floatingbutton.dart';
-import 'package:hello_world/inkwel_widget.dart';
-import 'package:hello_world/list_tile.dart';
-import 'package:hello_world/list_view.dart';
-import 'package:hello_world/driven_splasg_page.dart';
-import 'package:hello_world/list_view_practics.dart';
-import 'package:hello_world/listview_builder.dart';
-import 'package:hello_world/listview_separated.dart';
-import 'package:hello_world/listviewseparated.dart';
-import 'package:hello_world/mystatus_page.dart';
-import 'package:hello_world/practicsCard.dart';
-import 'package:hello_world/whatsapp_splash%20_page.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home:HomePage(),
+    home: HomePage(),
 
 
       //   Scaffold(

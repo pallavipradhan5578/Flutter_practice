@@ -7,7 +7,7 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home: HomePage(),
+    home: Practicspage(),
 
 
       //   Scaffold(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/Widgets/alert.dart';
 
 
 import 'package:hello_world/Widgets/radiobutton.dart';
@@ -9,7 +10,9 @@ void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home: WhatsappSplashApps(),
+
+
+    home:AlertInFlutter(),
 
 
       //   Scaffold(

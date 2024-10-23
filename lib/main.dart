@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-import 'package:hello_world/Widgets/learnapi.dart';
-import 'package:hello_world/Widgets/pop_widget.dart';
+
+import 'package:hello_world/Widgets/radiobutton.dart';
+import 'package:hello_world/list_tile.dart';
+import 'package:hello_world/radio_widget_page.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
     primarySwatch: Colors.red
   ),
-    home: Practicspage(),
+    home: WhatsappSplashApps(),
 
 
       //   Scaffold(

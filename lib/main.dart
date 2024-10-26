@@ -13,7 +13,7 @@ void main() {
   ),
 
 
-    home:Stack_widgwt_page(),
+    home:StackWidgetPage(),
 
 
       //   Scaffold(

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Stack_widgwt_page extends StatefulWidget {
-  const Stack_widgwt_page({super.key});
+class StackWidgetPage extends StatefulWidget {
+  const StackWidgetPage({super.key});
 
   @override
-  State<Stack_widgwt_page> createState() => _Stack_widgwt_pageState();
+  State<StackWidgetPage> createState() => _StackWidgetPageState();
 }
 
-class _Stack_widgwt_pageState extends State<Stack_widgwt_page> {
+class _StackWidgetPageState extends State<StackWidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,16 +17,21 @@ class _Stack_widgwt_pageState extends State<Stack_widgwt_page> {
       body: Center(
         child: RichText(
           text: TextSpan(
-            text: 'Hello ',
+            text: 'Hello 👋 ', // Added emoji directly after 'Hello'
             style: TextStyle(fontSize: 40, color: Colors.black), // Default style
             children: <TextSpan>[
-              TextSpan(text: 'Pallavi', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),),
-              TextSpan(text: ', welcome to Flutter!', style: TextStyle(fontStyle: FontStyle.italic, color: Colors.green)),
+              TextSpan(
+                text: 'Pallavi',
+                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+              ),
+              TextSpan(
+                text: ', welcome to Flutter!',
+                style: TextStyle(fontStyle: FontStyle.italic, color: Colors.green),
+              ),
             ],
           ),
         ),
-      )
-
+      ),
     );
   }
 }

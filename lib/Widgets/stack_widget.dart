@@ -15,34 +15,18 @@ class _Stack_widgwt_pageState extends State<Stack_widgwt_page> {
         backgroundColor: Colors.brown,
       ),
       body: Center(
-        child: ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.green,minimumSize: Size(250, 50)),
-            onPressed: () {
-              showDialog(
-                  context: context,
-                  builder: (context) {
-                    return Container(
-                      child: AlertDialog(
-                        title: Text('Do you want to exit ?'),
-                        actions: [
-                          TextButton(
-                            onPressed: () {
-                              Navigator.pop(context);
-                            },
-                            child: Text("Yes"),
-                          ),
-                          TextButton(
-                              onPressed: () {
-                                Navigator.pop(context);
-                              },
-                              child: Text("No"))
-                        ],
-                      ),
-                    );
-                  });
-            },
-            child: Text("Login")),
-      ),
+        child: RichText(
+          text: TextSpan(
+            text: 'Hello ',
+            style: TextStyle(fontSize: 40, color: Colors.black), // Default style
+            children: <TextSpan>[
+              TextSpan(text: 'Pallavi', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),),
+              TextSpan(text: ', welcome to Flutter!', style: TextStyle(fontStyle: FontStyle.italic, color: Colors.green)),
+            ],
+          ),
+        ),
+      )
+
     );
   }
 }

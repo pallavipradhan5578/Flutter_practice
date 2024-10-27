@@ -13,7 +13,7 @@ void main() {
   ),
 
 
-    home:StackWidgetPage(),
+    home:LoginApp(),
 
 
       //   Scaffold(
